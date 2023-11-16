@@ -1,0 +1,191 @@
+.navbar {
+     font-size: 25px;
+     font-family: 'Merriweather', serif;
+     background-color: beige;
+     width: 100%; /* Add this line to make it stretch across the screen */
+     margin: 0; /* Remove any default margin */
+     padding: 0;
+ }
+ 
+ .nav-item a {
+     color: gray;
+ }
+ .navbar-nav .nav-item a {
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: rgb(0, 0, 255); /* Change color on hover */
+}
+
+.navbar-nav .nav-item.active a {
+  color: rgb(255, 0, 0);
+  font-weight: bold; /* Indicate current page by making text bold */
+} 
+ body {
+     font-family: 'Merriweather', serif;
+     /* background-size: cover;
+     background-attachment: fixed;
+     min-height: 100vh;
+     /* background: url('D:/C219_Work/L02/media/sea_bg.mp4') no-repeat center center/cover; */
+     /* background-color: #6371CB; */
+ } 
+ body {
+     margin: 0;
+     font-family: Arial;                                                                                                                                                                                      
+     font-size: 17px;
+   }
+   
+.video-bg {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%; 
+     min-height: 100%;
+   }
+   
+   .content {
+     font-family: 'Merriweather', serif;
+     position: relative;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.5);
+     color: #f1f1f1;
+     width: 100%;
+     padding: 20px;
+   }
+   
+   .column {
+     float: left;
+     width: 33.33%;
+   }
+   
+   /* Clear floats after the columns */
+   .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   .column {
+     float: left;
+   }
+   
+   .left, .right {
+     width: 25%;
+   }
+   
+   .middle {
+     width: 50%;
+   }
+
+  
+
+
+
+
+   .logo{
+    width:181px;
+    height:179px;
+    transition: width 0.5s ease, height 0.5s ease, filter 0.5s ease;
+    position: relative;
+   }
+
+   .logo:hover{
+    width: 271.5px;
+    height: 268.5px;
+    filter:drop-shadow(8px 8px 10px gray);
+   }
+   .article-image {
+    width: 325px;
+    height: 225px;
+    position: relative;
+    filter: grayscale(100%) blur(1px);
+    transition: filter 0.3s ease;
+  }
+  
+  .article-image:hover {
+    filter: grayscale(0%) blur(0px);
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #ff0000;
+    width: 600px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+  }
+  .content-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.text-container {
+  margin-right: 20px; /* Adjust the spacing between text and image */
+}
+
+.image-container img {
+  display: block;
+}
+
+
+
+
+@media only screen and (max-width: 877px) {
+  /* body{
+      margin:0;
+      width:100%;
+  } */
+  .column {
+    width: 100%;
+  }
+
+      .video-container .video-bg {
+                  display: none;
+                  width: 100%;
+                  /* height: 100%; */
+              }
+  
+              .video-container {
+                  background-image: url("images/waterfall_bg.png");
+                  /* padding-right: 10%; */
+                  width: 100%;
+                  /* height: 100%; */
+              }
+      /* .nav-item a {
+       color: gray;
+      font-size:19px; 
+      }   
+      nav{
+          width: 100%;
+      }
+      .article-image{
+          width:100%;
+          height:auto;
+      }*/
+      .content{
+          text-align: center;
+          width:100%;
+      }
+  
+      .navbar-nav {
+        flex-direction: column !important; /* Ensure this takes precedence */
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+  
+  }
